@@ -1,0 +1,79 @@
+ body {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .main {
+      padding: 20px;
+      border: 2px solid #fff;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      width: 90%;
+
+    }
+
+
+    .sub {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: clamp(2rem, 6vw, 3.5rem);
+      font-weight: bold;
+      color: #fff;
+      letter-spacing: 4px;
+      gap: 8px;
+    }
+
+    .sub div:not([id]) {
+      font-size: clamp(1.5rem, 5vw, 2.5rem);
+      font-weight: normal;
+      color: #ddd;
+    }
+
+    .time-id {
+     
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 20px;
+
+    }
+
+    .time-id,
+    time {
+      color: aliceblue;
+       
+      font-size: 40px;
+    }
+
+    @media (max-width: 600px) {
+      .main {
+        padding: 15px;
+      }
+
+      .sub {
+        font-size: clamp(1.5rem, 8vw, 2.5rem);
+        gap: 5px;
+      }
+        .time-id {
+     
+     
+      padding-bottom: 20px;
+
+    }
+
+    .time-id,
+    time {
+      color: aliceblue;
+       
+      font-size: 27px;
+    }
+    }
